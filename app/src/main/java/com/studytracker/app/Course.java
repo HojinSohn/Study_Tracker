@@ -2,14 +2,17 @@ package com.studytracker.app;
 
 public class Course {
     String name;
-    int image;
+    String time;
+    String description;
 
     public Course(String name) {
         this.name = name;
     }
-    public Course(String name, int image) {
+
+    public Course(String name, String time, String description) {
         this.name = name;
-        this.image = image;
+        this.time = time;
+        this.description = description;
     }
 
     public String getName() {
@@ -20,11 +23,19 @@ public class Course {
         this.name = name;
     }
 
-    public int getImage() {
-        return image;
+    public String getTime() {
+        return time;
     }
 
-    public void setImage(int image) {
-        this.image = image;
+    public void setTime(String time) {
+        this.time = time;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
